@@ -4,6 +4,7 @@ import {PORT} from './config/env.js'
 import authRouter from './routes/auth.routes.js'
 import connectToDatabase from "./database/mongodb.js"
 import errorMiddleware from "./middleware/error.middleware.js"
+import userRouter from "./routes/user.routes.js"
 
 const app = express()
 
@@ -14,7 +15,7 @@ app.use(cookieParser())
 
 
 app.use('/api/v1/auth', authRouter)
-
+app.use("/api/v1/users", userRouter);
 
 app.use(errorMiddleware)
 
