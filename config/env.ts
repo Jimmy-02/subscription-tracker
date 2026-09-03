@@ -17,3 +17,5 @@ export const JWT_SECRET = getEnvVar("JWT_SECRET");
 export const JWT_EXPIRES_IN = getEnvVar("JWT_EXPIRES_IN");
 export const ARCJET_KEY = getEnvVar("ARCJET_KEY");
 export const ARCJET_ENV = getEnvVar("ARCJET_ENV");
+export const QSTASH_URL = getEnvVar("QSTASH_URL");
+export const QSTASH_TOKEN = getEnvVar("QSTASH_TOKEN");
